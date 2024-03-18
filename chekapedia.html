@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЧКпедия</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      color: #fff;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .character {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .character img {
+      float: left;
+      margin-right: 20px;
+      width: 150px;
+      height: 150px;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .footer img {
+      width: 50px;
+      height: 50px;
+      vertical-align: middle;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="WhiteLogo.png" alt="Rezoca Logo" style="width: 50px; height: 50px;">
+  <h1>ЧКпедия</h1>
+</header>
+
+<div class="container">
+  <div class="character" onclick="location.href='character.html';">
+    <img src="img/korenekoyp.jpg" alt="Изображение персонажа">
+    <h2>Коренекойп</h2>
+    <p>Самый известный персонаж ЧК и Благодатного. Вселяет страх и ужас во всех кто его видит, старше всей вселенной.</p>
+  </div>
+  <!-- Добавьте других персонажей здесь по аналогии -->
+</div>
+
+<div class="footer">
+  <a href="https://t.me/BotRezoca"><img src="RSLogo.png" alt="Rezoc Studio"></a>
+  <a href="https://t.me/BotRezoca">Rezoc Studio</a>
+  <a href="https://t.me/Rezoc">Связаться с нами</a>
+</div>
+
+</body>
+</html>
