@@ -1,8 +1,3 @@
-
-Чтобы создать нижнюю панель, которая появляется только когда пользователь пролистывает страницу в самый низ, а также расположить логотип "WhiteLogo" под названием "ЧКпедия", вы можете использовать следующий код:
-
-html
-Copy code
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -52,16 +47,17 @@ Copy code
       color: #fff;
       padding: 10px;
       text-align: center;
-      display: none;
+    }
+    .footer img {
+      width: 100px;
+      height: 50px;
+      vertical-align: middle;
     }
     .footer a {
       color: #fff;
       text-decoration: none;
       margin-left: 10px;
       margin-right: 10px;
-    }
-    .show-footer {
-      display: block;
     }
   </style>
 </head>
@@ -100,17 +96,11 @@ Copy code
   <a href="https://t.me/Rezoc">Связь с мно</a>
 </div>
 
-<script>
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollHeight == window.innerHeight + window.scrollY) {
-    document.getElementById("footer").classList.add("show-footer");
-  } else {
-    document.getElementById("footer").classList.remove("show-footer");
-  }
-}
-</script>
+<div class="footer">
+  <a href="https://t.me/BotRezoca"><img src="img/RSLogo.png" alt="Rezoc Studio"></a>
+  <a href="https://t.me/BotRezoca">Rezoc Studio</a>
+  <a href="https://t.me/Rezoc">Связь с мно</a>
+</div>
 
 </body>
 </html>
