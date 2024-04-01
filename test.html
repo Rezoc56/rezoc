@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЧКпедия</title>
+  <link rel="icon" type="image/png" href="img/Circle.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      color: #fff;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header img {
+      margin-right: 10px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .character {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .character img {
+      float: left;
+      margin-right: 20px;
+      width: 150px;
+      height: 150px;
+    }
+    .footer {
+      background-color: #222;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .footer img {
+      width: 120px;
+      height: 50px;
+      vertical-align: middle;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://rezoc56.github.io/"><img src="img/WhiteLogo.png" alt="img/WhiteLogo.png" style="width: 50px; height: 50px;"></a>
+  <h1>Тест</h1>
+</header>
+
+<div class="container">
+  <form id="messageForm" method="post" action="process_form.php">
+    <label for="message">Введите текст:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    <input type="submit" value="Отправить">
+  </form>
+</div>
+
+<div class="footer" id="footer">
+  <a href="https://t.me/+BHezLb-x9IYyNjQy">Вступить в ЧК</a>
+  <a href="https://t.me/Rezoc">Связь со мной</a>
+</div>
+
+<div class="footer">
+  <a href="https://t.me/RezocStudio"><img src="img/RSLogo.png" alt="Rezoc Studio"></a>
+  <a href="suggest.html">Предложить изменение</a>
+</div>
+
+</body>
+</html>
